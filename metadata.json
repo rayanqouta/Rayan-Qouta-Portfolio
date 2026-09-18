@@ -1,0 +1,6 @@
+{
+  "name": "Rayan Qouta - Engineering Portfolio",
+  "description": "A clean, modern professional engineering portfolio for Rayan Qouta showcasing biomedical engineering, signal processing, and FPGA systems.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
