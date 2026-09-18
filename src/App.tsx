@@ -29,6 +29,7 @@ const GITHUB_LOGO = "https://cdn-icons-png.flaticon.com/256/25/25231.png";
 const ALJEEL_LOGO_REMOTE = "https://aljeel.com/wp-content/uploads/elementor/thumbs/logo-normal-rkgocvn6ioa7v8nqwpzyy5t99enahiosjtqaboizcy.png";
 const ALJEEL_LOGO = "/logo-normal-rkgocvn6ioa7v8nqwpzyy5t99enahiosjtqaboizcy (1).png";
 const TMU_LOGO = "/tmu-logo.png";
+const RESUME_URL = "https://drive.google.com/file/d/1NFNLMdq8E5-AXoh2p2NsNa_Bl9Y25raK/view?usp=sharing";
 
 // --- SKETCH ILLUSTRATIONS (SVG) ---
 
@@ -1225,12 +1226,13 @@ export default function App() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <a 
-                    href="#" 
+                    href={RESUME_URL} 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="bg-gradient-to-r from-navy to-teal hover:from-navy-light hover:to-teal-light text-white font-bold py-4 px-10 rounded-xl transition-all flex items-center justify-center gap-3 uppercase tracking-widest text-[11px] hover:shadow-lg hover:shadow-teal/20 hover:-translate-y-1"
+                    className="bg-gradient-to-r from-navy to-teal hover:from-navy-light hover:to-teal-light text-white font-bold py-4 px-10 rounded-xl transition-all flex items-center justify-center gap-3 uppercase tracking-widest text-[11px] hover:shadow-lg hover:shadow-teal/20 hover:-translate-y-1 group"
                   >
-                    Download Resume
+                    <span>View & Download Resume</span>
+                    <ExternalLink size={14} className="group-hover:translate-x-0.5 transition-transform" />
                   </a>
                   <a 
                     href="#projects"
@@ -1266,9 +1268,13 @@ export default function App() {
                     Biomedical Engineering Student actively looking for co-op and engineering opportunities.
                   </p>
                   
-                  <div className="flex flex-col sm:flex-row gap-3 justify-center md:justify-start mb-8">
+                  <div className="flex flex-col sm:flex-row flex-wrap gap-3 justify-center md:justify-start mb-8">
                     <a href="mailto:Rrayan4493@gmail.com" className="bg-gradient-to-r from-navy to-teal hover:from-navy-light hover:to-teal-light text-white font-bold py-4 px-7 rounded-xl transition-all flex items-center justify-center gap-2.5 uppercase tracking-widest text-[11px] shadow-lg shadow-teal/20 hover:-translate-y-0.5">
                        Send an Email
+                    </a>
+                    <a href={RESUME_URL} target="_blank" rel="noopener noreferrer" className="bg-slate-50 hover:bg-white border border-slate-200 text-slate-900 font-bold py-4 px-6 rounded-xl transition-all flex items-center justify-center gap-2.5 uppercase tracking-widest text-[11px] hover:shadow-md hover:-translate-y-0.5 hover:border-teal/30">
+                       <ExternalLink size={14} className="text-teal" />
+                       Resume
                     </a>
                     <a href={LINKEDIN_URL} target="_blank" rel="noopener noreferrer" className="bg-slate-50 hover:bg-white border border-slate-200 text-slate-900 font-bold py-4 px-6 rounded-xl transition-all flex items-center justify-center gap-2.5 uppercase tracking-widest text-[11px] hover:shadow-md hover:-translate-y-0.5 hover:border-teal/30">
                        <img src={LINKEDIN_LOGO} alt="LinkedIn" className="w-4 h-4 object-contain" referrerPolicy="no-referrer" />
